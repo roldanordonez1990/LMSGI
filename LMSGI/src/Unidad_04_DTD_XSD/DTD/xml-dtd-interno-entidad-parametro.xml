@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE marvel [
+  <!ENTITY marvel "Ediciones Marvel">
+  <!ENTITY vengadores SYSTEM "superheroes.txt">
+  <!ENTITY % caracteristicasHeroe "<!ATTLIST superheroe 
+                                    nombre CDATA #REQUIRED color CDATA #IMPLIED>">
+
+  <!ELEMENT marvel (superheroe)>
+  <!ELEMENT superheroe (#PCDATA)>
+  %caracteristicasHeroe;
+]>
+<marvel>
+  <superheroe nombre="Thor" color="azul">Su historia es muy buena</superheroe>
+</marvel>

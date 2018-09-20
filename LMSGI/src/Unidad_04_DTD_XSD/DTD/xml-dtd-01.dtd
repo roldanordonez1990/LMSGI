@@ -1,0 +1,3 @@
+<!ELEMENT superheroes (superheroe*, marca)*>
+<!ELEMENT superheroe (#PCDATA)>
+<!ELEMENT marca (#PCDATA)>
