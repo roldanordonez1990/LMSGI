@@ -29,7 +29,7 @@
 			<productos>
 				<huevo xud="2" precio="2exd"/>
 			</productos>
-		</gallina>
+		</gallina> 
   
 		<gallina tipo="pollocarne" cantidad="80">
 			<coste xum="40" />    
