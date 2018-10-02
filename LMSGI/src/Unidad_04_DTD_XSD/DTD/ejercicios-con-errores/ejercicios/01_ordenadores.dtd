@@ -5,4 +5,4 @@
   <!ELEMENT modelo (#PCDATA)>
   <!ELEMENT fabricante (Asus | Intel)>
   <!ELEMENT Asus EMPTY>
-  <!ELEMENT Intel EMPTY>
+  <!ELEMENT Intel EMPTY> 
