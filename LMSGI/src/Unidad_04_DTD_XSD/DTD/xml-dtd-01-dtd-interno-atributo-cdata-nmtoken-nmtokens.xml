@@ -3,8 +3,8 @@
   <!ELEMENT marvel (superheroe*)>
   <!ELEMENT superheroe EMPTY>
   <!ATTLIST superheroe nombre CDATA #REQUIRED
-                                          edad NMTOKEN #IMPLIED
-                                          aliados NMTOKENS #IMPLIED>
+                       edad NMTOKEN #IMPLIED
+                       aliados NMTOKENS #IMPLIED>
 ]>
 <marvel>
   <superheroe nombre="Thor     el     que      se     fue    a      la      isla"/>

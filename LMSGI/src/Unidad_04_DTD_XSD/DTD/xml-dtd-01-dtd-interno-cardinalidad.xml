@@ -5,7 +5,7 @@
   <!ELEMENT poderes (poder+)>
   <!ELEMENT poder (#PCDATA)>
 ]>
-<superheroes>
+<superheroes> 
   <superheroe></superheroe>  <!-- No tiene un elemento poderes. Esto es válido -->
   <superheroe>  <!-- Tiene un sólo elemento poderes y un sólo elemento poder. Esto es válido -->
     <poderes>

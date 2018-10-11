@@ -12,8 +12,8 @@
 <marvel>
   <superheroe nombre="Thor" identificador="a1"/>
   <superheroe nombre="Hulk" identificador="a2"/>
-  <superheroe nombre="IronMan" identificador="a3"/>
-  <villano identificador="a"></villano>
+  <superheroe nombre="Iron Man" identificador="a3"/>
+  <villano identificador="a"/>
   <superpoder pertenece_a="a1">Martillo prodigioso</superpoder>
   <superpoder pertenece_a="a1">Dios del trueno</superpoder>
   <superpoder pertenece_a="a1">Resistencia</superpoder>

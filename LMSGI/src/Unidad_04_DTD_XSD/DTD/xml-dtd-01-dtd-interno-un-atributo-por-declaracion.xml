@@ -2,9 +2,9 @@
 <!DOCTYPE marvel [
   <!ELEMENT marvel (superheroe*)>
   <!ELEMENT superheroe EMPTY>
-  <!ATTLIST superheroe nombre CDATA #IMPLIED>
+  <!ATTLIST superheroe nombre CDATA #FIXED "Thor">
 ]>
 <marvel>
-  <superheroe />
+  <superheroe/>
   <superheroe nombre="Thor"/>
 </marvel>
