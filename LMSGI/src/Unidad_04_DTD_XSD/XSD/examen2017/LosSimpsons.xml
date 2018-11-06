@@ -7,4 +7,9 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 	</pelicula>
 	<creador bso="Danny Elfman">Matt Groening</creador>
 	<familia nombre="Simpsons">5</familia>
+	<temporada>
+		<temporada01/>
+		<!-- <temporada02/>
+		<temporada03/>-->
+	</temporada>
 </simpsons>
