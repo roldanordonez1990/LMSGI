@@ -23,5 +23,5 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 	<MontgomeryBurns dni="12345678A" matricula="1234ABC" mac="12:e4:3f:56:ae:4a" color="amarillo"/>
 	<localidadRival>San_Francisco</localidadRival>
 	<localidadesAmigas>San_Francisco Madrid</localidadesAmigas>
-	<Barney bebidaDiaria="" bebidaFavorita=""/>
+	<Barney bebidaDiaria="ron" bebidaFavorita=""/>
 </simpsons>
