@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="simpsons" type="tipoSimpsons"/>
+	
+	
+	<xs:complexType name="tipoSimpsons">
+		<xs:sequence>
+			<xs:element name="localidad">
+				<xs:complexType>
+					<xs:attribute name="valor" type="xs:string"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
