@@ -10,6 +10,13 @@
 					<xs:attribute name="valor" type="xs:string"/>
 				</xs:complexType>
 			</xs:element>
+			<xs:element name="pelicula">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="titulo" type="xs:string"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
