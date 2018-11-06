@@ -20,6 +20,5 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 		<Maggie/>
 	</personajes>
 	<colorPersonajes principal="negro" rojo="120" verde="150" azul="170"/>
-	<MontgomeryBurns dni="12345678A" matricula="0001ABC" 
-		mac="14:e3:a5:34:87:ef" color="amarillo"/>
+	<MontgomeryBurns dni="12345678A" matricula="1234ABC" mac="12:e4:3f:56:ae:4a" color="amarillo"/>
 </simpsons>

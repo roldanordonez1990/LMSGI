@@ -12,6 +12,7 @@
 			<xs:element name="temporada" type="tipoTemporada"/>
 			<xs:element name="personajes" type="tipoPersonajes"/>
 			<xs:element name="colorPersonajes" type="tipoColorPersonajes"/>
+			<xs:element name="MontgomeryBurns" type="tipoMontgomeryBurns"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -98,7 +99,8 @@
 		<xs:attribute name="azul" type="valorEntre100y1000"/>
 	</xs:complexType>
 	
-	<!-- Tipo de valores numéricos entre 100 y 1000 para los
+	<!-- 9. (0,75 puntos) Existe un atributo cuyo contenido debe ser un número dentro de un intervalo numérico determinado, por ejemplo entre 100 y 1000.
+	Tipo de valores numéricos entre 100 y 1000 para los
 	atributos del complexType anterior
 	 -->
 	<xs:simpleType name="valorEntre100y1000">
@@ -107,4 +109,42 @@
 			<xs:maxInclusive value="1000"/>
 		</xs:restriction>
 	</xs:simpleType>
+	
+	
+	<!-- 10. Llevas a cabo y utilizas correctamente una expresión regular de alguno de los siguientes tipos. Cada tipo viene asignado a una serie de personas determinadas, debes leer el final de este documento:
+			a. (0,75 puntos) Un DNI
+			b. (0,75 puntos) Una matrícula de coche española (tres caracteres en mayúscula y cuatro números)
+			c. (0,75 puntos) Una dirección MAC (seis pares de números hexadecimales separados por ":").
+			d. (0,75 puntos) Una serie de diferentes colores.
+	-->
+	<xs:complexType name="tipoMontgomeryBurns">
+		<xs:attribute name="dni">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9]{8}[A-Z|a-z]"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="matricula">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="[0-9]{4}[A-Z]{3}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+ 		<xs:attribute name="mac">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="([0-9|A-F|a-f]{2}:){5}[0-9|A-F|a-f]{2}"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+ 		<xs:attribute name="color">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="(amarillo)|(rojo)|(negro)"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
 </xs:schema>
