@@ -9,11 +9,13 @@
 			<xs:element name="pelicula" type="tipoPelicula"/>
 			<xs:element name="creador" type="tipoCreador"/>
 			<xs:element name="familia" type="tipoFamilia"/>
+			<xs:element name="temporada" type="tipoTemporada"/>
 		</xs:sequence>
 	</xs:complexType>
 	
 	
-	<!-- 
+	<!--  2. (0,5 puntos) Existe un elemento cuyo contenido es vacío.
+		  4. (0,5 puntos) Existe un elemento con atributos de diferentes tipos primitivos (al menos uno de cadena de caracteres y otro de tipo numérico).
 	 -->
 	<xs:complexType name="tipoLocalidad">
 		<xs:attribute name="valor" type="xs:string"/>
@@ -21,7 +23,7 @@
 	</xs:complexType>
 	
 	
-	<!-- 
+	<!-- 3. (0,75 puntos) Existe un elemento con contenido mixto (texto y subelementos).
 	-->
 	<xs:complexType mixed="true" name="tipoPelicula">
 		<xs:sequence>
@@ -30,7 +32,8 @@
 	</xs:complexType>
 	
 	
-	<!-- 
+	<!-- 5. (0,5 puntos) Existe un elemento con atributos y contenido texto.
+	Versión fácil, utilizando el atributo "mixed"
 	 -->
 	 <xs:complexType name="tipoCreador" mixed="true">
 	 	<xs:attribute name="bso" type="xs:string"/>
@@ -44,5 +47,16 @@
 				<xs:attribute name="nombre" type="xs:string" />
 			</xs:extension>
 		</xs:simpleContent>
+	</xs:complexType>
+	
+	
+	<!-- 
+	 -->
+	<xs:complexType name="tipoTemporada">
+		<xs:choice>
+			<xs:element name="temporada01" type="xs:string"/>
+			<xs:element name="temporada02" type="xs:string"/>
+			<xs:element name="temporada03" type="xs:string"/>
+		</xs:choice>
 	</xs:complexType>
 </xs:schema>

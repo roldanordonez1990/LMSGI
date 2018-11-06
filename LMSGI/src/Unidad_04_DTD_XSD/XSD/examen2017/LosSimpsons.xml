@@ -12,4 +12,11 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 		<!-- <temporada02/>
 		<temporada03/>-->
 	</temporada>
+	<personajes>
+		<Homer/>
+		<Marge/>
+		<Bart/>
+		<Lisa/>
+		<Maggie/>
+	</personajes>
 </simpsons>
