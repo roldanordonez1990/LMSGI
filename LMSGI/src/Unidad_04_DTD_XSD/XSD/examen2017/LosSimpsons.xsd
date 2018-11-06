@@ -64,7 +64,8 @@
 	</xs:complexType>
 	
 	
-	<!-- 
+	<!-- (0,5 puntos) Usas <xs:sequence>, <xs:choice> y <xs:all> de forma consciente, aprovechando las ventajas e inconvenientes de cada uno de estos elementos.
+	En este caso usamos <xs:all>
 	 -->
 	<xs:complexType name="tipoPersonajes">
 		<xs:all>
@@ -76,11 +77,11 @@
 		</xs:all>
 	</xs:complexType>
 	
-	<!-- 
+	<!-- Tipo vacío, necesario para el complexType anterior
 	-->
 	<xs:complexType name="tipoVacio"/>
 	
-	<!-- 
+	<!-- 8. (0,75 puntos) Existe un atributo que toma su valor de una lista de posibles valores.
 	-->
 	<xs:complexType name="tipoColorPersonajes">
 		<xs:attribute name="principal">
@@ -92,5 +93,18 @@
 				</xs:restriction>
 			</xs:simpleType>
 		</xs:attribute>
+		<xs:attribute name="rojo" type="valorEntre100y1000"/>
+		<xs:attribute name="verde" type="valorEntre100y1000"/>
+		<xs:attribute name="azul" type="valorEntre100y1000"/>
 	</xs:complexType>
+	
+	<!-- Tipo de valores numéricos entre 100 y 1000 para los
+	atributos del complexType anterior
+	 -->
+	<xs:simpleType name="valorEntre100y1000">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="100"/>
+			<xs:maxInclusive value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
 </xs:schema>
