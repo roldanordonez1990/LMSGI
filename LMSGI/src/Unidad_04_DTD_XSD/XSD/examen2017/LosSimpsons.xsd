@@ -11,6 +11,7 @@
 			<xs:element name="familia" type="tipoFamilia"/>
 			<xs:element name="temporada" type="tipoTemporada"/>
 			<xs:element name="personajes" type="tipoPersonajes"/>
+			<xs:element name="colorPersonajes" type="tipoColorPersonajes"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -78,4 +79,18 @@
 	<!-- 
 	-->
 	<xs:complexType name="tipoVacio"/>
+	
+	<!-- 
+	-->
+	<xs:complexType name="tipoColorPersonajes">
+		<xs:attribute name="principal">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:enumeration value="amarillo"/>
+					<xs:enumeration value="rojo"/>
+					<xs:enumeration value="negro"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
 </xs:schema>
