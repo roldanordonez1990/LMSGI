@@ -9,7 +9,7 @@
   <!ELEMENT superpoder (#PCDATA)>
   <!ATTLIST superpoder pertenece_a IDREF #REQUIRED>
 ]>
-<marvel>
+<marvel> 
   <superheroe nombre="Thor" identificador="a1"/>
   <superheroe nombre="Hulk" identificador="a2"/>
   <superheroe nombre="Iron Man" identificador="a3"/>
