@@ -6,4 +6,5 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 		<titulo>Los Simpsons la película</titulo>
 	</pelicula>
 	<creador bso="Danny Elfman">Matt Groening</creador>
+	<familia nombre="Simpsons">5</familia>
 </simpsons>

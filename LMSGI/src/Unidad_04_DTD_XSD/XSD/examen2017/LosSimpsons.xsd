@@ -7,6 +7,8 @@
 		<xs:sequence>
 			<xs:element name="localidad" type="tipoLocalidad"/>
 			<xs:element name="pelicula" type="tipoPelicula"/>
+			<xs:element name="creador" type="tipoCreador"/>
+			<xs:element name="familia" type="tipoFamilia"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -25,5 +27,22 @@
 		<xs:sequence>
 			<xs:element name="titulo" type="xs:string"/>
 		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<!-- 
+	 -->
+	 <xs:complexType name="tipoCreador" mixed="true">
+	 	<xs:attribute name="bso" type="xs:string"/>
+	 </xs:complexType>
+	 
+	 <!-- 
+	  -->
+	 <xs:complexType name="tipoFamilia">
+		<xs:simpleContent>
+			<xs:extension base="xs:integer">
+				<xs:attribute name="nombre" type="xs:string" />
+			</xs:extension>
+		</xs:simpleContent>
 	</xs:complexType>
 </xs:schema>
