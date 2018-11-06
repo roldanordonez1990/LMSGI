@@ -13,6 +13,8 @@
 			<xs:element name="personajes" type="tipoPersonajes"/>
 			<xs:element name="colorPersonajes" type="tipoColorPersonajes"/>
 			<xs:element name="MontgomeryBurns" type="tipoMontgomeryBurns"/>
+			<xs:element name="localidadRival" type="tipoLocalidadRival"/>
+			<xs:element name="localidadesAmigas" type="tipoLocalidadesAmigas"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -147,4 +149,43 @@
 			</xs:simpleType>
 		</xs:attribute>
 	</xs:complexType>
+	
+	<!-- 
+	-->
+	<xs:simpleType name="tipoLocalidadRival">
+		<xs:union memberTypes="localidadesEspanya localidadesEEUU"/>
+	</xs:simpleType>
+	
+	<!-- 
+	-->
+	<xs:simpleType name="localidadesEspanya">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="Sevilla"/>
+			<xs:enumeration value="Córdoba"/>
+			<xs:enumeration value="Málaga"/>
+			<xs:enumeration value="Madrid"/>
+			<xs:enumeration value="Huelva"/>
+			<xs:enumeration value="Cádiz"/>
+			<xs:enumeration value="Granada"/>
+			<xs:enumeration value="Murcia"/>
+			<xs:enumeration value="Barcelona"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- 
+	-->
+	<xs:simpleType name="localidadesEEUU">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="New_York"/>
+			<xs:enumeration value="Las_Vegas"/>
+			<xs:enumeration value="San_Francisco"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<!-- 
+	-->
+	<xs:simpleType name="tipoLocalidadesAmigas">
+		<xs:list itemType="tipoLocalidadRival"/>
+	</xs:simpleType>
+		
 </xs:schema>
