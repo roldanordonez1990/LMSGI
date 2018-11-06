@@ -10,6 +10,7 @@
 			<xs:element name="creador" type="tipoCreador"/>
 			<xs:element name="familia" type="tipoFamilia"/>
 			<xs:element name="temporada" type="tipoTemporada"/>
+			<xs:element name="personajes" type="tipoPersonajes"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -39,7 +40,7 @@
 	 	<xs:attribute name="bso" type="xs:string"/>
 	 </xs:complexType>
 	 
-	 <!-- 
+	 <!-- 6. (1 punto) Existe un elemento con atributos y contenido de tipo numérico.
 	  -->
 	 <xs:complexType name="tipoFamilia">
 		<xs:simpleContent>
@@ -50,7 +51,8 @@
 	</xs:complexType>
 	
 	
-	<!-- 
+	<!-- (0,5 puntos) Usas <xs:sequence>, <xs:choice> y <xs:all> de forma consciente, aprovechando las ventajas e inconvenientes de cada uno de estos elementos.
+	En este caso usamos <xs:choice>
 	 -->
 	<xs:complexType name="tipoTemporada">
 		<xs:choice>
@@ -59,4 +61,21 @@
 			<xs:element name="temporada03" type="xs:string"/>
 		</xs:choice>
 	</xs:complexType>
+	
+	
+	<!-- 
+	 -->
+	<xs:complexType name="tipoPersonajes">
+		<xs:all>
+			<xs:element name="Homer" type="tipoVacio"/>
+			<xs:element name="Marge" type="tipoVacio"/>
+			<xs:element name="Bart" type="tipoVacio"/>
+			<xs:element name="Lisa" type="tipoVacio"/>
+			<xs:element name="Maggie" type="tipoVacio"/>
+		</xs:all>
+	</xs:complexType>
+	
+	<!-- 
+	-->
+	<xs:complexType name="tipoVacio"/>
 </xs:schema>

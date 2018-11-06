@@ -19,4 +19,5 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 		<Lisa/>
 		<Maggie/>
 	</personajes>
+	<colorPersonajes principal="amarillo"/>
 </simpsons>
