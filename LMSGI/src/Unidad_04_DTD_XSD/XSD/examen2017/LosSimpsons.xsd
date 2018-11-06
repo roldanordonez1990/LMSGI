@@ -5,18 +5,24 @@
 	
 	<xs:complexType name="tipoSimpsons">
 		<xs:sequence>
-			<xs:element name="localidad">
-				<xs:complexType>
-					<xs:attribute name="valor" type="xs:string"/>
-				</xs:complexType>
-			</xs:element>
-			<xs:element name="pelicula">
-				<xs:complexType mixed="true">
-					<xs:sequence>
-						<xs:element name="titulo" type="xs:string"/>
-					</xs:sequence>
-				</xs:complexType>
-			</xs:element>
+			<xs:element name="localidad" type="tipoLocalidad"/>
+			<xs:element name="pelicula" type="tipoPelicula"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	
+	<!-- 
+	 -->
+	<xs:complexType name="tipoLocalidad">
+		<xs:attribute name="valor" type="xs:string"/>
+	</xs:complexType>
+	
+	
+	<!-- 
+	-->
+	<xs:complexType mixed="true" name="tipoPelicula">
+		<xs:sequence>
+			<xs:element name="titulo" type="xs:string"/>
 		</xs:sequence>
 	</xs:complexType>
 </xs:schema>
