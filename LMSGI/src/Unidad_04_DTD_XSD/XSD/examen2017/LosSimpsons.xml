@@ -23,5 +23,20 @@ xsi:noNamespaceSchemaLocation="LosSimpsons.xsd">
 	<MontgomeryBurns dni="12345678A" matricula="1234ABC" mac="12:e4:3f:56:ae:4a" color="amarillo"/>
 	<localidadRival>San_Francisco</localidadRival>
 	<localidadesAmigas>San_Francisco Madrid</localidadesAmigas>
-	<Barney bebidaDiaria="ron" bebidaFavorita=""/>
+	<Barney bebidaDiaria="ron" bebidaFavorita="vodka"/>
+	<Apu fechaNacimiento="10-02-1940">
+		<apodo>El del Badulake</apodo>
+	</Apu>
+	<Manyula fechaNacimiento="23-12-1948" nacionalidad="India">
+		<apodo>Madre de octillizos</apodo>
+		<DiosPreferido>Shiva</DiosPreferido>
+	</Manyula>
+	<Hugo>
+		<aficion>coser pájaros</aficion>
+		<ladoCicatriz>derecho</ladoCicatriz>
+		<edad>8</edad>
+		<aficion>correr</aficion>
+		<aficion>andar</aficion>
+		<aficion>pescar</aficion>
+	</Hugo>
 </simpsons>

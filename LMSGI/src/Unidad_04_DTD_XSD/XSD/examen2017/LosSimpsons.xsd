@@ -15,6 +15,10 @@
 			<xs:element name="MontgomeryBurns" type="tipoMontgomeryBurns"/>
 			<xs:element name="localidadRival" type="tipoLocalidadRival"/>
 			<xs:element name="localidadesAmigas" type="tipoLocalidadesAmigas"/>
+			<xs:element name="Barney" type="tipoBarney"/>
+			<xs:element name="Apu" type="tipoApu"/>
+			<xs:element name="Manyula" type="tipoManyula"/>
+			<xs:element name="Hugo" type="tipoHugo"/>
 		</xs:sequence>
 	</xs:complexType>
 	
@@ -150,7 +154,7 @@
 		</xs:attribute>
 	</xs:complexType>
 	
-	<!-- 
+	<!-- 11. (0,75 puntos) Existe un tipo de datos simple creado con <xs:union>
 	-->
 	<xs:simpleType name="tipoLocalidadRival">
 		<xs:union memberTypes="localidadesEspanya localidadesEEUU"/>
@@ -182,10 +186,74 @@
 		</xs:restriction>
 	</xs:simpleType>
 	
-	<!-- 
+	<!-- 12. (0,75 puntos) Existe un tipo de datos simple creado con <xs:list>.
 	-->
 	<xs:simpleType name="tipoLocalidadesAmigas">
 		<xs:list itemType="tipoLocalidadRival"/>
 	</xs:simpleType>
 		
+		
+		
+	<!-- 13. (1 punto) Existe un tipo de datos simple derivado de otro tipo de datos simple
+	-->
+	<xs:complexType name="tipoBarney">
+		<xs:attribute name="bebidaDiaria" type="tipoBebidasDiarias"/>
+		<xs:attribute name="bebidaFavorita" type="tipoBebidasFavoritas"/>
+	</xs:complexType>
+		
+	<!-- 
+	 -->
+	<xs:simpleType name="tipoBebidasDiarias">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="ron"/>
+			<xs:enumeration value="whisky"/>
+			<xs:enumeration value="vodka"/>
+			<xs:enumeration value="cerveza"/>
+			<xs:enumeration value="vino"/>
+		</xs:restriction>
+	</xs:simpleType>	
+	
+	
+	<!-- 
+	-->
+	<xs:simpleType name="tipoBebidasFavoritas">
+		<xs:restriction base="tipoBebidasDiarias">
+			<xs:enumeration value="vodka"/>
+			<xs:enumeration value="cerveza"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<!-- 14. (1 punto) Existe un tipo de datos complejo que derive de otro tipo de datos complejo.
+	-->
+	<xs:complexType name="tipoApu">
+		<xs:sequence>
+			<xs:element name="apodo" type="xs:string"/>
+		</xs:sequence>
+		<xs:attribute name="fechaNacimiento" type="xs:string"/>
+	</xs:complexType>
+	
+	<!-- 
+	-->
+	<xs:complexType name="tipoManyula">
+	<xs:complexContent>
+      <xs:extension base="tipoApu">
+      	<xs:sequence>
+      		<xs:element name="DiosPreferido" type="xs:string"/>
+      	</xs:sequence>
+        <xs:attribute name="nacionalidad" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+	</xs:complexType>
+	
+	<!-- Esto es un apartado extra que hemos visto en clase, en el que permitimos que los 
+		elementos hijos de "Hugo" puedan aparecer en cualquier orden y con repetición.
+	-->
+	<xs:complexType name="tipoHugo">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="edad" type="xs:string"/>
+			<xs:element name="ladoCicatriz" type="xs:string"/>
+			<xs:element name="aficion" type="xs:string"/>
+		</xs:choice>
+	</xs:complexType>
 </xs:schema>
