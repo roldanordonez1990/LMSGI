@@ -25,9 +25,14 @@
                   <td>Este superheroe es muy poderoso</td>
                 </tr>
               </xsl:when>
+              <xsl:when test="@nivel &lt; 6">
+                <tr>
+                  <td>Este superheroe es muy malo</td>
+                </tr>
+              </xsl:when>
               <xsl:otherwise>
                 <tr>
-                  <td>Este superheroe es una birria</td>
+                  <td>Este superheroe es normalito</td>
                 </tr>
               </xsl:otherwise>
             </xsl:choose>
