@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="examen1DAW.xsl"?>
+<?xml-stylesheet type="text/xsl" href="examen1DAW02.xsl"?>
 
 <primerDia1DAW>
 	<horario>
-		<dia desc="Lunes">
+		<dia desc="Lunes" color="rojo">
 			<hora orden="1">ENT DES</hora>
 			<hora orden="2">PROG</hora>
 			<hora orden="3">PROG</hora>
@@ -11,7 +11,7 @@
 			<hora orden="5">SIST INF</hora>
 			<hora orden="6">SIST INF</hora>
 		</dia>	
-		<dia desc="Martes">
+		<dia desc="Martes" color="verde">
 			<hora orden="1">FOL</hora>
 			<hora orden="2">FOL</hora>
 			<hora orden="3">LMSGI</hora>
@@ -19,7 +19,7 @@
 			<hora orden="5">BBDD</hora>
 			<hora orden="6">SIST INF</hora>
 		</dia>	
-		<dia desc="Miércoles">
+		<dia desc="Miércoles" color="amarillo">
 			<hora orden="1">BBDD</hora>
 			<hora orden="3">ENT DES</hora>
 			<hora orden="6">PROG</hora>
@@ -27,7 +27,7 @@
 			<hora orden="2">BBDD</hora>
 			<hora orden="5">PROG</hora>
 		</dia>	
-		<dia desc="Jueves">
+		<dia desc="Jueves" color="azul">
 			<hora orden="4">PROG</hora>
 			<hora orden="1">BBDD</hora>
 			<hora orden="2">SIST INF</hora>
@@ -35,7 +35,7 @@
 			<hora orden="6">LMSGI</hora>
 			<hora orden="3">PROG</hora>
 		</dia>	
-		<dia desc="Viernes">
+		<dia desc="Viernes" color="naranja">
 			<hora orden="1">SIST INF</hora>
 			<hora orden="3">BBDD</hora>
 			<hora orden="4">BBDD</hora>
@@ -113,7 +113,7 @@
 		<alumno sexo="M" x="7" y="8">Lourdes</alumno>
 		<alumno sexo="H" x="7" y="9">Ramiro</alumno>
 		<alumno sexo="M" x="7" y="10">Rafa</alumno>
-		<imagen sexo="M">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-enero/recursos/miiMujer.png</imagen>
+		<imagen sexo="M">recursos/miiMujer.png</imagen>
 		<imagen sexo="H">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2018-enero/recursos/miiHombre.png</imagen>
 	</alumnado>
 </primerDia1DAW>
