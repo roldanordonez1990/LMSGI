@@ -66,6 +66,10 @@
   	</td>
   </xsl:template>
 
+
+
+
+
   <xsl:template name="css">
     <style type="text/css">
       body {
