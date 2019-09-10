@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="xml-xsd-ejercicio2.xsl"?>
+<vehiculos> 
+  <vehiculo> 
+    <nombre>Renault 7</nombre> 
+    <modelo anioFabricacion="2000">Series I, 80"</modelo> 
+    <fabricacion> 
+      <inicio> 
+        <dia>21</dia> 
+        <mes>July</mes> 
+        <anyo>1949</anyo> 
+      </inicio> 
+      <fin> 
+        <dia>9</dia> 
+        <mes>August</mes> 
+        <anyo>1949</anyo> 
+      </fin> 
+    </fabricacion> 
+    <modificaciones> 
+      <modificacion>Change Engine</modificacion> 
+      <modificacion>Change pedals</modificacion> 
+      <modificacion>Change gearbox</modificacion> 
+      <modificacion>Fit Rollcage</modificacion> 
+    </modificaciones> 
+  </vehiculo> 
+  <vehiculo> 
+    <nombre>Citroen C15</nombre> 
+    <modelo>Series I, 80"</modelo> 
+    <fabricacion> 
+      <inicio> 
+        <dia>21</dia> 
+        <mes>July</mes> 
+        <anyo>1949</anyo> 
+      </inicio> 
+      <fin> 
+        <dia>9</dia> 
+        <mes>August</mes> 
+        <anyo>1949</anyo> 
+      </fin> 
+    </fabricacion> 
+    <modificaciones> 
+      <modificacion>Change Engine</modificacion> 
+      <modificacion>Change pedals</modificacion> 
+      <modificacion>Change gearbox</modificacion> 
+      <modificacion>Fit Rollcage</modificacion> 
+    </modificaciones> 
+  </vehiculo> 
+</vehiculos>

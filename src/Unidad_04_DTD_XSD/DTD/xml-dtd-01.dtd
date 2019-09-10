@@ -1,0 +1,3 @@
+<!ELEMENT superheroes (superheroe?, supervillano?)*>
+<!ELEMENT superheroe (#PCDATA)>
+<!ELEMENT supervillano (#PCDATA)>

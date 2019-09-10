@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultados>
+    <resultado valor="X">
+        <equipo tipo="local" goles="1">Real Madrid</equipo>
+        <equipo tipo="visitante" goles="1">FC Barcelona</equipo>
+        <finalizado valor="Sí"/>
+    </resultado>
+    <resultado valor="1">
+        <equipo tipo="local" goles="2">Betis</equipo>
+        <equipo tipo="visitante" goles="1">Sevilla</equipo>
+        <finalizado valor="Sí"/>
+    </resultado>
+    <resultado valor="2">
+        <equipo tipo="local" goles="1">Almería</equipo>
+        <equipo tipo="visitante" goles="3">Málaga</equipo>
+        <finalizado valor="Sí"/>
+    </resultado>
+</resultados>
