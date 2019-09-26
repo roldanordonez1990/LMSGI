@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tienda>
     <articulo codigo="1">
-        <descripcion>Monitor LG 17 pulgadas con &gt;10% de descuento</descripcion>
+        <descripcion>Monitor LG 17 pulgadas con &lt;10% de descuento</descripcion>
         <stock valor="S"/>
     </articulo>
     <articulo codigo="2">

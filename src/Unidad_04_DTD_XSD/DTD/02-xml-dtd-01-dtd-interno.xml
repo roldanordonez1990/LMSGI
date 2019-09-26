@@ -4,7 +4,6 @@
   <!ELEMENT superheroe (poderes?, nombre?)*>
   <!ELEMENT nombre (#PCDATA)>
   <!ELEMENT poderes (poder*)>
-  <!ELEMENT poder EMPTY>
 ]>
 <superheroes>
   <superheroe>
