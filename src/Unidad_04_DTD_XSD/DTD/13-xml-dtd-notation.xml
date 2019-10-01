@@ -7,7 +7,7 @@
   <!ELEMENT marvel (superheroe*)>
   <!ELEMENT superheroe (#PCDATA)>
   <!ATTLIST superheroe nombre CDATA #REQUIRED
-                                          tipoImagen NOTATION (GIF | JPG | PNG) #IMPLIED>
+                       tipoImagen NOTATION (GIF | JPG | PNG) #IMPLIED>
 ]>
 <marvel>
   <superheroe nombre="Thor" tipoImagen="PNG">Un Dios</superheroe>

@@ -9,6 +9,5 @@
 <marvel>
   <superheroe nombre="Thor     el     que      se     fue    a      la      isla"/>
   <superheroe nombre="Hulk" edad="68"/>
-  <superheroe nombre="Iron Man" edad="45"
-                          aliados="Thor Hulk Captain"/>
+  <superheroe nombre="Iron Man" edad="45" aliados="Thor Hulk Captain"/>
 </marvel>

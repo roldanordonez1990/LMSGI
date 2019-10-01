@@ -3,7 +3,7 @@
   <!ELEMENT marvel (superheroe*)>
   <!ELEMENT superheroe EMPTY>
   <!ATTLIST superheroe nombre CDATA #REQUIRED
-                		edad CDATA #IMPLIED
+                		    edad CDATA #IMPLIED
                         estado (activo | retirado | muerto) "retirado"
                         localizacion CDATA #FIXED "localizado"
                         color CDATA "normal">
