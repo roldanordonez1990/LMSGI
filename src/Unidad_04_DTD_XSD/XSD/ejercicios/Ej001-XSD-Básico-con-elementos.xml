@@ -1,8 +1,9 @@
 <!-- Crea un fichero XSD que valide el siguiente XML --> 
-<marvel>
-    <superheroe>Hulk</superheroe>
-    <superheroe>Thor</superheroe>
-    <superheroe>Iron Man</superheroe>
-    <supervillano>Cráneo rojo</supervillano>
+<marvel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="Ej001-XSD.xsd" creador="Kirby">
+    <superheroe>Wanda</superheroe>
+    <superheroe>Capitana Marvel</superheroe>
+    <superheroe>Viuda negra</superheroe>
+    <supervillano>Cráneo Rojo</supervillano>
     <supervillano>Thanos</supervillano>
 </marvel>
