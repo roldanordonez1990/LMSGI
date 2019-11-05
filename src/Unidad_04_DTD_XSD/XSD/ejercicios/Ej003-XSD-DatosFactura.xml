@@ -6,7 +6,7 @@
     <dir>Av. Valladolid</dir> 
     <poblacion cod_postal="28043">Madrid</poblacion> 
     <provincia>Madrid</provincia> 
-    <cif>Q-9876543</cif> 
+    <cif>Q-9876543</cif>  
     <telefono valor="917776688"/> 
     <fax valor="917776699"/>
   </datos_empresa> 
