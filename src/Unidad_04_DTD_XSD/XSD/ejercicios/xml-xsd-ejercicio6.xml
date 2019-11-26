@@ -29,6 +29,5 @@ xsi:noNamespaceSchemaLocation="xml-xsd-ejercicio6.xsd"> <!-- El valor del usuari
 				<cuerpo>Cuerpo de mensaje de Hangout</cuerpo>
 			</mensaje>
 		</hangout>
-		<!-- Entre los elementos "mail" y "mensaje" debes hacer una derivación de tipos de datos complejos -->
 	</mensajes>
 </usuario>

@@ -9,7 +9,7 @@
 				<malos>700</malos>
 			</comentarios>
 			<subscriptores>
-				<subscriptor>15-[AR]-56
+				<subscriptor codigo="15-[AR]-56">
 					<fechaSubscripcion dia="12" mes="febrero" anyo="2017"/>
 					<comentarios cantidad="12"/>
 					<correoElectronico completo="rafa@gmail.com">
