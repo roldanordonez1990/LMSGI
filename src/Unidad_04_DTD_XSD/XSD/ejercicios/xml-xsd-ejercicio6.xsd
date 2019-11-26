@@ -6,7 +6,7 @@
                 <xs:element name="ultimasSesiones" type="tipoUltimasSesiones"/>
                 <xs:element name="marcadores"/>
                 <xs:element name="mensajes"/>
-            </xs:all>
+            </xs:all> <!-- Rafa -->
             <xs:attribute name="id" type="xs:string"/>
         </xs:complexType>
     </xs:element>
