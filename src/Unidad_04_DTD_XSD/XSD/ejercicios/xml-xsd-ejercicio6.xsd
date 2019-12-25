@@ -3,22 +3,12 @@
     <xs:element name="usuario">
         <xs:complexType>
             <xs:all>
-                <xs:element name="ultimasSesiones" type="tipoUltimasSesiones"/>
+                <xs:element name="ultimasSesiones"/>
                 <xs:element name="marcadores"/>
                 <xs:element name="mensajes"/>
             </xs:all> <!-- Rafa -->
             <xs:attribute name="id" type="xs:string"/>
         </xs:complexType>
     </xs:element>
-
-    <xs:complexType name="tipoUltimasSesiones">
-        <xs:sequence>
-            <xs:element name="sesion">
-                <xs:complexType>
-                    <xs:attribute></xs:attribute>
-                </xs:complexType>
-            </xs:element>
-        </xs:sequence>
-    </xs:complexType>
 
 </xs:schema>
