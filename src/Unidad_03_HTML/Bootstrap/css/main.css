@@ -1,0 +1,12 @@
+
+body {
+    text-align: justify;
+}
+
+.textoDeAclaracion {
+    font-weight: bold;
+}
+
+.margenSuperior {
+    margin-top: 2em;
+}
