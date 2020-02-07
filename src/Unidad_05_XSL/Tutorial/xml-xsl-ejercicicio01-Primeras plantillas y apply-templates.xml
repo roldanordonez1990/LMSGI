@@ -2,7 +2,7 @@
 <?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio01.xsl" ?>
 
 <superheroe>
-	<nombre>Thor</nombre>
+	<nombre>Thor, el Dios</nombre>
 	<poderes>Martillo mágico, Dios, Fuerza</poderes>
 	<amigos>Iron Man y Hulk</amigos>
 </superheroe>

@@ -5,22 +5,22 @@
   <xsl:template match="/superheroe">
     <html>
       <head>
-        <title>Superheroes</title>
+        <title>Superheroes de Marvel</title>
       </head>
       <body>
-      	<xsl:apply-templates/>
+      	<h1><xsl:value-of select="nombre"/></h1>
+      	<h1><xsl:value-of select="poderes"/></h1>
+      	<h1><xsl:value-of select="amigos"/></h1>
       </body>
     </html>
   </xsl:template>
-
-  <xsl:template match="nombre">
+<!--   <xsl:template match="nombre">
       <h1>Superheroe: <xsl:value-of select="."/></h1>
   </xsl:template>
 
   <xsl:template match="poderes">
       <h1>Poderes: <xsl:value-of select="."/></h1>
-  </xsl:template>
-<!--  
+  </xsl:template> 
   <xsl:template match="amigos">
       <h1>Amigos: <xsl:value-of select="."/></h1>
   </xsl:template>
