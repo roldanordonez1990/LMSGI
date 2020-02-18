@@ -14,7 +14,7 @@
       </body>
     </html>
   </xsl:template>
-<!--   <xsl:template match="nombre">
+   <xsl:template match="nombre">
       <h1>Superheroe: <xsl:value-of select="."/></h1>
   </xsl:template>
 
@@ -24,5 +24,5 @@
   <xsl:template match="amigos">
       <h1>Amigos: <xsl:value-of select="."/></h1>
   </xsl:template>
--->
+
 </xsl:stylesheet>
