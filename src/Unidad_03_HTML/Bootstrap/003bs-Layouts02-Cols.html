@@ -14,8 +14,8 @@
         .row div {
             padding-top: .75rem;
             padding-bottom: .75rem;
-            background-color: rgba(86,61,124,.15);
-            border: 1px solid rgba(86,61,124,.2);
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
         }
     </style>
 </head>
@@ -84,7 +84,8 @@
 
         <div class="container-fluid margenSuperior">
             <h3>Columnas con anchos relativos a su contenido</h3>
-            <p class="textoDeAclaracion">Se Las columnas marcadas con clase "col-{breakpoint}-auto" ajustan su ancho a su
+            <p class="textoDeAclaracion">Si Las columnas marcadas con clase "col-{breakpoint}-auto" ajustan su ancho a
+                su
                 contenido</p>
             <div class="row justify-content-md-center">
                 <div class="col col-lg-2">
@@ -109,7 +110,27 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        <div class="container-fluid margenSuperior">
+            <h3>De apilados a horizontal</h3>
+            <p class="textoDeAclaracion">Ejemplo simple de divs apilados por debajo del tamaño SM pero en horizontal en
+                otros casos</p>
+            <div class="row">
+                <div class="col-sm-8">col-sm-8</div>
+                <div class="col-sm-4">col-sm-4</div>
+            </div>
+            <div class="row">
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+            </div>
+        </div>
+    
+        <h2 class="margenSuperior">Puedes seguir viendo lo relativo a layouts, con muchas más opciones en<br/>
+            <a href="https://getbootstrap.com/docs/4.4/layout/grid/#mix-and-match">https://getbootstrap.com/docs/4.4/layout/grid/#mix-and-match</a></h2>
+        </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

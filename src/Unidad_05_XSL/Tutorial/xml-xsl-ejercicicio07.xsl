@@ -9,7 +9,7 @@
       </head>
       <body>
         <xsl:for-each select="superheroe">
-          <xsl:if test="@nombre='Thor'">
+          <xsl:if test="@nombre='Thor' or @nombre='Hulk'">
             <table border="1">
               <tr class="tituloTabla">
                 <td><xsl:value-of select="@nombre"/></td>

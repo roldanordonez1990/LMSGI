@@ -25,12 +25,6 @@
       <body>
         <table border="1">
           <xsl:apply-templates />
-          <tr>
-            <td>poderes: <xsl:value-of select="poderes"/></td>
-          </tr>
-          <tr>
-            <td>amigos: <xsl:value-of select="amigos"/></td>
-          </tr>
         </table>
       </body>
     </html>
@@ -43,6 +37,9 @@
   </xsl:template>
   
   <xsl:template match="amigos">
+  	<tr class="tituloTabla">
+  		<td><xsl:value-of select="."/></td>
+  	</tr>
   </xsl:template>
 
 </xsl:stylesheet>

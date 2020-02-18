@@ -20,6 +20,7 @@
 .contenedorTarjetas {
     margin-top: 30px;
     width: 100%;
+    padding: 0px;
 }
 
 .tarjeta {
@@ -33,7 +34,7 @@
 }
 
 .tarjetaUnCuarto {
-    width: 23%;
+    width: 22%;
 }
 
 .imagenAnchoCompleto {

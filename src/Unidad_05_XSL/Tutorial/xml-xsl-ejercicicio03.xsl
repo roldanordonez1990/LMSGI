@@ -23,7 +23,7 @@
         }
       </style>
       <body>
-        <xsl:apply-templates select="superheroe"/>
+        <xsl:apply-templates/>
       </body>
     </html>
   </xsl:template>
@@ -45,19 +45,4 @@
 
 
 
-  <xsl:template match="supervillano">
-    <table border="1">
-      <tr class="tituloTabla">
-        <td><xsl:value-of select="nombre"/></td>
-      </tr>
-      <tr>
-        <td>poderes: <xsl:value-of select="poderes"/></td>
-      </tr>
-      <tr>
-        <td>amigos: <xsl:value-of select="amigos"/></td>
-      </tr>
-    </table>
-    <br/>
-  </xsl:template>
-  
 </xsl:stylesheet>
