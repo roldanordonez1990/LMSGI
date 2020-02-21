@@ -43,12 +43,29 @@
   </xsl:template>
 
 
-
+  
   <xsl:template name="muestraTablaSuperheroe">
     <xsl:param name="color"/>
     <xsl:param name="imagen"/>
+
+ 
+    <div>
+      <xsl:attribute name="style">width:400px; background:
+        <xsl:choose>
+          <xsl:when test="contains(@nombre, 'a')">
+            <xsl:value-of select="$color"/>;
+          </xsl:when>
+          <xsl:otherwise>
+            #FFFFFF;
+          </xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <h2>
+        <xsl:value-of select="@nombre"/> - Color <xsl:value-of select="$color"/>
+      </h2>
+    </div>
     
-    <div style="width: 400px; background:{$color}; position: left;">
+<!--    <div style="width: 400px; background:{$color}; position: left;">
       <table>
         <tr class="tituloTabla">
           <td colspan="2"><xsl:value-of select="@nombre"/></td>
@@ -65,7 +82,7 @@
           <td><xsl:value-of select="concat('Amigos: ', @amigos)"/></td>
         </tr>
       </table>
-    </div>
+    </div> -->
   </xsl:template>
 
 
