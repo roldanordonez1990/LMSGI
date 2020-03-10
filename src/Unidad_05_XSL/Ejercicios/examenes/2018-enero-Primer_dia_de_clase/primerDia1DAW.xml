@@ -3,7 +3,7 @@
 
 <primerDia1DAW>
 	<horario>
-		<dia desc="Lunes" color="rojo">
+		<dia desc="Lunes">
 			<hora orden="1">ENT DES</hora>
 			<hora orden="2">PROG</hora>
 			<hora orden="3">PROG</hora>
@@ -11,7 +11,7 @@
 			<hora orden="5">SIST INF</hora>
 			<hora orden="6">SIST INF</hora>
 		</dia>	
-		<dia desc="Martes" color="verde">
+		<dia desc="Martes">
 			<hora orden="1">FOL</hora>
 			<hora orden="2">FOL</hora>
 			<hora orden="3">LMSGI</hora>
@@ -19,7 +19,7 @@
 			<hora orden="5">BBDD</hora>
 			<hora orden="6">SIST INF</hora>
 		</dia>	
-		<dia desc="Miércoles" color="amarillo">
+		<dia desc="Miércoles">
 			<hora orden="1">BBDD</hora>
 			<hora orden="3">ENT DES</hora>
 			<hora orden="6">PROG</hora>
@@ -27,7 +27,7 @@
 			<hora orden="2">BBDD</hora>
 			<hora orden="5">PROG</hora>
 		</dia>	
-		<dia desc="Jueves" color="azul">
+		<dia desc="Jueves">
 			<hora orden="4">PROG</hora>
 			<hora orden="1">BBDD</hora>
 			<hora orden="2">SIST INF</hora>
@@ -35,7 +35,7 @@
 			<hora orden="6">LMSGI</hora>
 			<hora orden="3">PROG</hora>
 		</dia>	
-		<dia desc="Viernes" color="naranja">
+		<dia desc="Viernes">
 			<hora orden="1">SIST INF</hora>
 			<hora orden="3">BBDD</hora>
 			<hora orden="4">BBDD</hora>
